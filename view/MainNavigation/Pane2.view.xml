@@ -1,0 +1,8 @@
+<mvc:View controllerName="DemoUXapp.controller.MainNavigation.Pane2"
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Right pane container, bottom split pane">
+
+    </Page>
+</mvc:View>
