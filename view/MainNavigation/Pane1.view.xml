@@ -2,7 +2,29 @@
     height="100%"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page title="Left pane container">
 
-    </Page>
+    <List id="objectlist"
+        headerText="Object List Items"
+        updateFinished="onUpdateFinished"
+        items="{path:'/'}">
+        <headerToolbar>
+            <Toolbar>
+                <Title id="title" />
+            </Toolbar>
+        </headerToolbar>
+        <items>
+            <ObjectListItem title="{FirstName} {LastName}"
+                type="Navigation"
+                press="onPress">
+                <attributes>
+                    <ObjectAttribute text="{EmployeeID}" />
+                    <ObjectAttribute text="{Address}" />
+                    <ObjectAttribute text="{City}" />
+                    <ObjectAttribute text="{Country}" />
+                    <ObjectAttribute text="{HomePhone}" />
+                </attributes>
+            </ObjectListItem>
+        </items>
+    </List>
+
 </mvc:View>

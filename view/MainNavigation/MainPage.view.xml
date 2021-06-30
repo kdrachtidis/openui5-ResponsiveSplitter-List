@@ -14,14 +14,12 @@
             id="default">
             <mvc:XMLView viewName="DemoUXapp.view.MainNavigation.Pane1" />
           </l:SplitPane>
-          <l:PaneContainer orientation="Vertical">
-            <l:SplitPane requiredParentWidth="600">
-              <mvc:XMLView viewName="DemoUXapp.view.MainNavigation.Pane2" />
-            </l:SplitPane>
-            <l:SplitPane requiredParentWidth="800">
-              <mvc:XMLView viewName="DemoUXapp.view.MainNavigation.Pane3" />
-            </l:SplitPane>
-          </l:PaneContainer>
+          <l:SplitPane requiredParentWidth="600">
+            <mvc:XMLView viewName="DemoUXapp.view.MainNavigation.Pane2" />
+          </l:SplitPane>
+          <l:SplitPane requiredParentWidth="800">
+            <mvc:XMLView viewName="DemoUXapp.view.MainNavigation.Pane3" />
+          </l:SplitPane>
         </l:PaneContainer>
       </l:ResponsiveSplitter>
 

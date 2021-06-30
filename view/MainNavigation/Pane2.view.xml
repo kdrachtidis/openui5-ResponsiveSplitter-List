@@ -2,7 +2,23 @@
     height="100%"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page title="Right pane container, bottom split pane">
 
-    </Page>
+    <List id="standardlist"
+        updateFinished="onUpdateFinished"
+        items="{path:'/'}">
+        <headerToolbar>
+            <Toolbar>
+                <Title id="title" />
+            </Toolbar>
+        </headerToolbar>
+        <items>
+            <StandardListItem title="{CompanyName}"
+                iconDensityAware="false"
+                iconInset="false"
+                type="Navigation"
+                press="onPress"
+                info="{ContactName}" />
+        </items>
+    </List>
+
 </mvc:View>
